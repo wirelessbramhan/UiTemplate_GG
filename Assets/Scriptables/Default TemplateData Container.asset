@@ -1,0 +1,147 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 977261ab388fba64da0b3cc9bb1dda44, type: 3}
+  m_Name: Default TemplateData Container
+  m_EditorClassIdentifier: 
+  templateData:
+  - name: Root
+    type: holder
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+    position: {x: 0, y: 0}
+    background: {r: 1, g: 1, b: 1, a: 1}
+    outline: {r: 0, g: 0, b: 0, a: 1}
+    text: 
+    padding: 8
+    width: 1000
+    textSize: 0
+    height: 500
+    childs:
+    - name: caption
+      type: text
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+      position: {x: 230, y: -50}
+      background: {r: 1, g: 1, b: 1, a: 1}
+      outline: {r: 0, g: 0, b: 0, a: 1}
+      text: Heading
+      padding: 4
+      width: 500
+      textSize: 30
+      height: 150
+      childs: []
+    - name: cTA
+      type: button
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+      position: {x: 24, y: -180}
+      background: {r: 0.9811321, g: 0.54980415, b: 0.54980415, a: 1}
+      outline: {r: 0, g: 0, b: 0, a: 1}
+      text: press
+      padding: 8
+      width: 200
+      textSize: 30
+      height: 100
+      childs: []
+    - name: someTex
+      type: icon
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+      position: {x: 230, y: 85}
+      background: {r: 0.9811321, g: 0.54980415, b: 0.54980415, a: 1}
+      outline: {r: 0.028301895, g: 0.028301895, b: 0.028301895, a: 1}
+      text: press
+      padding: 4
+      width: 500
+      textSize: 30
+      height: 100
+      childs: []
+    - name: bold
+      type: text
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+      position: {x: -365, y: 190}
+      background: {r: 1, g: 1, b: 1, a: 1}
+      outline: {r: 0, g: 0, b: 0, a: 1}
+      text: Ad
+      padding: 4
+      width: 100
+      textSize: 40
+      height: 50
+      childs: []
+  - name: Root
+    type: holder
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+    position: {x: 0, y: 0}
+    background: {r: 1, g: 1, b: 1, a: 1}
+    outline: {r: 0, g: 0, b: 0, a: 1}
+    text: 
+    padding: 8
+    width: 1000
+    textSize: 0
+    height: 500
+    childs:
+    - name: caption
+      type: text
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+      position: {x: 230, y: -50}
+      background: {r: 1, g: 1, b: 1, a: 1}
+      outline: {r: 0, g: 0, b: 0, a: 1}
+      text: Heading
+      padding: 4
+      width: 500
+      textSize: 30
+      height: 150
+      childs: []
+    - name: cTA
+      type: button
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+      position: {x: 24, y: -180}
+      background: {r: 0.9811321, g: 0.54980415, b: 0.54980415, a: 1}
+      outline: {r: 0, g: 0, b: 0, a: 1}
+      text: press
+      padding: 8
+      width: 200
+      textSize: 30
+      height: 100
+      childs: []
+    - name: someTex
+      type: icon
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+      position: {x: 230, y: 85}
+      background: {r: 0.9811321, g: 0.54980415, b: 0.54980415, a: 1}
+      outline: {r: 0.028301895, g: 0.028301895, b: 0.028301895, a: 1}
+      text: press
+      padding: 4
+      width: 500
+      textSize: 30
+      height: 100
+      childs: []
+    - name: bold
+      type: text
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+      position: {x: -365, y: 190}
+      background: {r: 1, g: 1, b: 1, a: 1}
+      outline: {r: 0, g: 0, b: 0, a: 1}
+      text: Ad
+      padding: 4
+      width: 100
+      textSize: 40
+      height: 50
+      childs: []
+  fileHandler: {fileID: 11400000, guid: 674619b8c5f222b4db480e8c1378498a, type: 2}
+  saves: []
