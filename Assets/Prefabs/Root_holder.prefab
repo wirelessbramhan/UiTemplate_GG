@@ -61,7 +61,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   childs: []
-  _data:
+  _loadedData:
     name: Root
     type: holder
     rotation: {x: 0, y: 0, z: 0}

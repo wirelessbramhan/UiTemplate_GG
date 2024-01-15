@@ -8,6 +8,7 @@ public class ExtendedEditorWindow : EditorWindow
     protected SerializedObject _serializedObject;
     protected SerializedProperty _serializedProperty;
 
+    //Automated SO serialization for complex classes
     protected void DrawProperties(SerializedProperty prop, bool showChildren)
     {
         string lastPropPath = string.Empty;
@@ -37,12 +38,14 @@ public class ExtendedEditorWindow : EditorWindow
         }
     }
 
+    //Simple collection serialization for Scriptable Object
     protected void DrawPropertiesSimple(string propertyName)
     {
         _serializedProperty = _serializedObject.FindProperty(propertyName);
         EditorGUILayout.PropertyField(_serializedProperty);
     }
 
+    //Reflects changes made in Editor to SO
     protected void ChangePropertiesSimple()
     {
         if(_serializedObject != null)

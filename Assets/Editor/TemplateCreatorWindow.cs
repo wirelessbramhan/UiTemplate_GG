@@ -43,14 +43,14 @@ public class TemplateCreatorWindow : ExtendedEditorWindow
 
         if (GUILayout.Button("Save Layout"))
         {
-            TemplateDataSO.Save();
+            FileDataHandlerSO.Save();
         }
 
         EditorGUILayout.Space(10);
 
         if (GUILayout.Button("Load Layout"))
         {
-            TemplateDataSO.Load();
+            FileDataHandlerSO.Load();
             //DrawPropertiesSimple("templateData");
         }
 

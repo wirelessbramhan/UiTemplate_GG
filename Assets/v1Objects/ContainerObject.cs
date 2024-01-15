@@ -30,7 +30,7 @@ public class ContainerObject : TemplateObject
             if(obj != this)
             {
                 var i = obj.GetComponent<TemplateObject>();
-                _viewData.childs.Add(i._data);
+                _viewData.childs.Add(i._loadedData);
             }
         }
     }

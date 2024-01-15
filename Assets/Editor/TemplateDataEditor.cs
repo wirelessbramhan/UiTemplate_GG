@@ -24,14 +24,14 @@ public class TemplateDataEditor : Editor
 {
     private void OnEnable()
     {
-        TemplateDataSO.OnLoadEvent += RefreshWindow;
-        TemplateDataSO.OnSaveEvent += RefreshWindow;
+        FileDataHandlerSO.OnLoadEvent += RefreshWindow;
+        FileDataHandlerSO.OnSaveEvent += RefreshWindow;
     }
 
     private void OnDisable()
     {
-        TemplateDataSO.OnLoadEvent -= RefreshWindow;
-        TemplateDataSO.OnSaveEvent -= RefreshWindow;
+        FileDataHandlerSO.OnLoadEvent -= RefreshWindow;
+        FileDataHandlerSO.OnSaveEvent -= RefreshWindow;
     }
     public override void OnInspectorGUI()
     {

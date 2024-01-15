@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Element prefabs must exist in this collection to avoid string comparison
 public enum ElementType
 {
     root,
@@ -37,13 +38,16 @@ public class ElementSpawner : MonoBehaviour
     }
     private void Start()
     {
-        _dataSO.SetData(_root._data);
+        _dataSO.SetData(_root._loadedData);
     }
 
+    #region Spawning Objects on Event
     [ContextMenu("spawn root")]
     private void SpawnRoot()
     {
         _root = Instantiate(templates[0], transform);
+        _root._loadedData = FileDataHandlerSO.currentData;
+
     }
 
     [ContextMenu("spawn objects")]
@@ -72,8 +76,13 @@ public class ElementSpawner : MonoBehaviour
         OnElementSpawnEvent?.Invoke();
     }
 
+    /// <summary>
+    /// Sets type before Instantiating element
+    /// </summary>
+    /// <param name="type">type of UI element</param>
     public static void SetType(ElementType type)
     {
         _type = type;
     }
+    #endregion
 }

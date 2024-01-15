@@ -91,7 +91,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   childs: []
-  _data:
+  _loadedData:
     name: 
     type: 
     rotation: {x: 0, y: 0, z: 0}

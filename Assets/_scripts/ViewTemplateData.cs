@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
+#region extended hierarchy for nesting
+
 [Serializable]
 public class Root : ViewData
 {
@@ -21,6 +23,8 @@ public class Container : ViewData
     public Color backgroundColor = Color.white;
     public List<ViewTemplateData> childs;
 }
+
+#endregion
 
 [Serializable]
 public class ViewTemplateData : ViewData

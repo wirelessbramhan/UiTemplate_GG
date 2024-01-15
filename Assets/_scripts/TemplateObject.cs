@@ -8,7 +8,7 @@ public abstract class TemplateObject : MonoBehaviour
 {
     public List<TemplateObject> childs = new();
     protected RectTransform _rectTransform;
-    [HideInInspector] public ViewTemplateData _data;
+    [HideInInspector] public ViewTemplateData _loadedData;
     protected bool _loaded;
     public List<TemplateObject> Children;
     private void Awake()
@@ -35,7 +35,7 @@ public abstract class TemplateObject : MonoBehaviour
     private void AddChildren()
     {
         Children.Clear();
-        _data.childs.Clear();
+        _loadedData.childs.Clear();
 
         if (transform.childCount > 0)
         {
@@ -44,7 +44,7 @@ public abstract class TemplateObject : MonoBehaviour
                 if (t.TryGetComponent<TemplateButton>(out var obj))
                 {
                     Children.Add(obj);
-                    _data.childs.Add(obj._viewData);
+                    _loadedData.childs.Add(obj._viewData);
                 }
             }
         }

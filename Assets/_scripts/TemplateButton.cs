@@ -10,6 +10,8 @@ public class TemplateButton : TemplateObject
     private TextMeshProUGUI _text;
     private Image _outline;
     private Button _button;
+
+    //values change and bind after components are bound
     public override void Configure()
     {
         if (TryGetComponent(out _rectTransform))
@@ -55,13 +57,43 @@ public class TemplateButton : TemplateObject
         gameObject.name = _viewData.name + "_" + _type;
         _viewData.type = _type;
 
-        _data = _viewData;
+        _loadedData = _viewData;
     }
 
+    //components are assigned on Awake and OnValidate
     public override void Setup()
     {
         _button = GetComponentInChildren<Button>();
         
         _text = GetComponentInChildren<TextMeshProUGUI>();
+    }
+
+    /// <summary>
+    /// //Loads provided data values
+    /// </summary>
+    /// <param name="newData"></param>
+    public void LoadValues(ViewTemplateData newData)
+    {
+        if(newData != null)
+        {
+            if (newData.type == _viewData.type)
+            {
+                _loadedData = newData;
+            }
+
+            if (transform.childCount > 0)
+            {
+                foreach (Transform t in transform.GetChild(0))
+                {
+                    if (t.TryGetComponent<TemplateButton>(out var obj))
+                    {
+                        foreach (ViewTemplateData childData in newData.childs)
+                        {
+                            obj.LoadValues(childData);
+                        }
+                    }
+                }
+            }
+        }
     }
 }
