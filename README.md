@@ -20,15 +20,6 @@ An in-depth paragraph about your project and overview of use.
 * Click "Create Template" to add a Base Holder for template objects.
 * Click "Add Elements" with one of the available types of elements to be added onto the Holder.
 ```
-code blocks for commands
-```
-
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
 
 ## License
 
