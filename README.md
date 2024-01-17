@@ -1,14 +1,8 @@
-# Project Title
+# UI Template Creator (JSON)
 
 JSON data binding utility for Unity Engine UI template creation
 
-## Description
-
-An in-depth paragraph about your project and overview of use.
-
-## Getting Started
-
-### Installation
+## Installation
 
 * Scriptable Objects are necessary as well as a Write access to the Application.PersistenPath value for the platform.
 
