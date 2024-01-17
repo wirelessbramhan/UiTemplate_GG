@@ -19,7 +19,6 @@ An in-depth paragraph about your project and overview of use.
 * Click "Load Template" to load last saved template from memory.
 * Click "Create Template" to add a Base Holder for template objects.
 * Click "Add Elements" with one of the available types of elements to be added onto the Holder.
-```
 
 ## License
 
